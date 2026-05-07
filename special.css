@@ -537,3 +537,108 @@ nav a:hover::after {
         padding: 5px 8px;
     }
 }
+@media (max-width: 768px) {
+    p{
+     font-size: 8px;
+    color: #fcf9f9;
+    
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+header {
+    
+    background-position: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
+     color: #fcf9f9;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.highlight {
+    color: #ff9f43;
+}
+.container1{
+  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
+  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
+  gap: 0px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
+  padding: 3px;
+  
+}
+
+.image-part1 img {
+  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
+  max-width: 100px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.text-part1 {
+  flex: 1; 
+   font-size: 18px;
+    color: #fcf9f9;
+    
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
+}
+.team-container { 
+            display: flex;
+            flex-wrap: wrap;     
+            justify-content: center; 
+            gap: 0px;         
+            padding: 0px;
+        }
+/* member-card ထဲက ပုံတွေကို ဘေးတိုက်စီမယ် */
+.member-card {
+    display: flex;         /* Flexbox သုံးပြီး Row စီမယ် */
+    flex-direction: row;   /* ဘေးတိုက်စီဖို့ (Default လည်း row ပါပဲ) */
+    justify-content: center; /* ပုံတွေကို အလယ်မှာ စုပေးမယ် */
+    gap: 5px;             /* ပုံတစ်ပုံနဲ့ တစ်ပုံကြား အကွာအဝေး */
+    padding: 10px;
+}
+
+/* ပုံတွေ အကြီးကြီးဖြစ်မနေအောင် အရွယ်အစား သတ်မှတ်မယ် */
+.member-card img {
+    width: 100px;          /* ပုံရဲ့ အကျယ် (စိတ်ကြိုက်ပြင်ပါ) */
+    height: 50px;         /* ပုံရဲ့ အမြင့် */
+    object-fit: cover;     /* ပုံမပြဲသွားအောင် ထိန်းမယ် */
+    border-radius: 10px;   /* ထောင့်လေးတွေ ဝိုင်းချင်ရင် ထည့်ပါ */
+}
+.container2{
+  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
+  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
+  gap: 0px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
+  padding: 0px;
+  flex-direction: row-reverse;
+}
+.image-part2 img {
+  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
+  max-width: 100px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.text-part2 {
+  flex: 1; 
+   font-size: 18px;
+    color: #fcf9f9;
+    
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
+}
+}
