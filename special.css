@@ -297,6 +297,8 @@ nav a:hover::after {
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
     padding: 10px 0;
     backdrop-filter: blur(15px);
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 /* Dropdown Show Class (JS မှ လှမ်းခေါ်ရန်) */
@@ -305,10 +307,10 @@ nav a:hover::after {
 }
 
 .dropdown-content li a {
-    padding: 12px 20px;
+    padding: 10px 20px;
     display: block;
     color: #fbf7f7 !important;
-    font-weight: 500;
+    font-size: 14px;
 }
 
 .dropdown-content li a:hover {
@@ -362,8 +364,16 @@ nav a:hover::after {
         background: rgba(255, 255, 255, 0.1);
         width: 100%;
         text-align: center;
+        
+        max-height: 70vh;
+        overflow-y: auto;
     }
-    
+        .dropdown-content li a {
+        padding: 5px 15px !important;
+        display: block;
+        color: #fbf7f7 !important;
+        font-size: 12px;
+    }
     .dropdown-content li a {
         color: white !important;
     }
