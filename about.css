@@ -83,45 +83,47 @@
             font-style: oblique;
             cursor: pointer;
         }
+         /* Contact footer — centered button group */
+         footer {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             gap: 20px;
+             padding: 25px 20px 0;
+         }
+         .my-contact-btn,
+         .my-contacta-btn {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-size: 1rem;
+             font-weight: 600;
+             color: #f0f6ff;
+             text-decoration: none;
+             display: inline-flex;
+             align-items: center;
+             justify-content: center;
+             gap: 10px;
+             width: auto;
+             min-width: 220px;
+             padding: 15px 30px;
+             border: 1px solid rgba(0, 212, 255, 0.5);
+             border-radius: 40px;
+             box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+             transition: all 0.3s ease;
+         }
          .my-contact-btn {
-            color: rgb(57, 164, 179) !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0a0322;
-            border-radius: 35px;
-            text-decoration: none;
-            display: inline-flex;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            padding: 10px 25px;
-            margin: 20px 0px;
-            height: 30px;
-            margin-left: 450px;
-        }
-        .my-contact-btn:hover{
-            background-color: #5784d8;
-            color: rgb(5, 15, 59) !important;
-            transform: translateY(-3px);
-        }
-        .my-contacta-btn:hover{
-            background-color: #5784d8;
-            color:  rgb(5, 15, 59) !important;
-            transform: translateY(-3px);
-        }
-        .my-contacta-btn {
-            color: rgb(19, 104, 100) !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d0b30;
-            border-radius: 35px;
-            text-decoration: none;
-            display: inline-flex;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            padding: 10px 25px;
-        }
+             background: linear-gradient(135deg, #0099ff, #00d4ff);
+         }
+         .my-contacta-btn {
+             background: linear-gradient(135deg, #0088cc, #229ed9);
+         }
+         .my-contact-btn:hover,
+         .my-contacta-btn:hover {
+             color: #ffffff;
+             transform: translateY(-4px);
+             box-shadow: 0 14px 30px rgba(0, 212, 255, 0.45);
+             border-color: rgba(255, 255, 255, 0.6);
+         }
         @media (max-width: 600px){
             header img{
                 height:  100px !important;
@@ -157,45 +159,19 @@
             sectiona{
                 font-size: 14px;
             }
-            .my-contact-btn {
-            color: rgb(57, 164, 179) !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0a0322;
-            border-radius: 35px;
-            text-decoration: none;
-            display: inline-flex;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            padding: 10px 25px;
-            margin: 0px 0px;
-            height: 30px;
-            margin-left: 50px;
-        }
-        .my-contact-btn:hover{
-            background-color: #5784d8;
-            color: rgb(5, 15, 59) !important;
-            transform: translateY(-3px);
-        }
-        .my-contacta-btn:hover{
-            background-color: #5784d8;
-            color:  rgb(5, 15, 59) !important;
-            transform: translateY(-3px);
-        }
-        .my-contacta-btn {
-            color: rgb(19, 104, 100) !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d0b30;
-            border-radius: 35px;
-            text-decoration: none;
-            display: inline-flex;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            padding: 10px 25px;
-        }
+            footer {
+                flex-direction: column;
+                gap: 14px;
+                padding: 20px 15px 30px;
+            }
+            .my-contact-btn,
+            .my-contacta-btn {
+                width: 100%;
+                max-width: 300px;
+                min-width: 0;
+                padding: 13px 20px;
+                font-size: 0.95rem;
+            }
         }
         /* --- Global Reset & Smooth Transition --- */
 * {
