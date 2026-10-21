@@ -1,141 +1,19 @@
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-p{
-     font-size: 18px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-header {
-    
-    background-position: center;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 28px;
-     color: #fcf9f9;
-    margin-bottom: 40px;
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #ff9f43;
-}
-.container1{
-  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
-  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
-  gap: 20px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
-  padding: 20px;
-  
-}
-
-.image-part1 img {
-  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
-  max-width: 500px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
-  height: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 3px solid rgba(255, 255, 255, 0.1);
-
-}
-
-.text-part1 {
-  flex: 1; 
-   font-size: 18px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
-}
-.team-container { 
-            display: flex;
-            flex-wrap: wrap;     
-            justify-content: center; 
-            gap: 20px;         
-            padding: 40px;
-        }
-/* member-card ထဲက ပုံတွေကို ဘေးတိုက်စီမယ် */
-.member-card {
-    display: flex;         /* Flexbox သုံးပြီး Row စီမယ် */
-    flex-direction: row;   /* ဘေးတိုက်စီဖို့ (Default လည်း row ပါပဲ) */
-    justify-content: center; /* ပုံတွေကို အလယ်မှာ စုပေးမယ် */
-    gap: 15px;             /* ပုံတစ်ပုံနဲ့ တစ်ပုံကြား အကွာအဝေး */
-    padding: 20px;
-}
-
-/* ပုံတွေ အကြီးကြီးဖြစ်မနေအောင် အရွယ်အစား သတ်မှတ်မယ် */
-.member-card img {
-    width: 400px;          /* ပုံရဲ့ အကျယ် (စိတ်ကြိုက်ပြင်ပါ) */
-    height: 350px;         /* ပုံရဲ့ အမြင့် */
-    object-fit: cover;     /* ပုံမပြဲသွားအောင် ထိန်းမယ် */
-    border-radius: 10px;   /* ထောင့်လေးတွေ ဝိုင်းချင်ရင် ထည့်ပါ */
-}
-.container2{
-  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
-  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
-  gap: 20px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
-  padding: 20px;
-  flex-direction: row-reverse;
-}
-.image-part2 img {
-  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
-  max-width: 500px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
-  height: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 3px solid rgba(255, 255, 255, 0.1);
-
-}
-
-.text-part2 {
-  flex: 1; 
-   font-size: 18px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
-}
-/* ဖုန်းနဲ့ကြည့်ရင် တစ်ခုပေါ်တစ်ခုအောက် ဆင်းသွားအောင် လုပ်နည်း */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-}
-            
-/* --- Global Reset & Smooth Transition --- */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    transition: all 0.3s ease;
 }
+
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #050816;
-    min-height: 100vh;
     color: #e6f1ff;
+    min-height: 100vh;
     overflow-x: hidden;
     position: relative;
 }
@@ -152,86 +30,53 @@ body::after {
     z-index: -2;
     animation: floatBlob 18s infinite alternate ease-in-out;
 }
-
-body::before {
-    top: -100px;
-    left: -100px;
-}
-
-body::after {
-    bottom: -100px;
-    right: -100px;
-    animation-delay: 6s;
-}
+body::before { top: -100px; left: -100px; }
+body::after  { bottom: -100px; right: -100px; animation-delay: 6s; }
 
 @keyframes floatBlob {
-    0% { transform: translate(0,0) scale(1); }
+    0%   { transform: translate(0,0) scale(1); }
     100% { transform: translate(100px,80px) scale(1.2); }
 }
-.one{
-    color: rgb(216, 32, 109);
-}
-.two{
-    color: rgb(211, 87, 25);
-}
-.three{
-    color: rgb(10, 133, 75);
-}
-.four{
-    color: #3498db;
-}
-.five{
-    color: aquamarine;
-}
-.six{
-    color: burlywood;
-}
-/* ဒါက နောက်ခံရဲ့ ရေးရေးလေး ပြေးနေတဲ့ Anumation */
+
 .light-sweep {
     position: fixed;
     top: 0;
     left: -100%;
     width: 200%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent 40%,
-        rgba(0,170,255,0.08) 50%,
-        transparent 60%
-    );
+    background: linear-gradient(120deg, transparent 40%, rgba(0,170,255,0.08) 50%, transparent 60%);
     z-index: -1;
     animation: sweep 8s infinite;
+    pointer-events: none;
 }
-
 @keyframes sweep {
-    0% { left: -100%; }
+    0%   { left: -100%; }
     100% { left: 100%; }
 }
 
-
-/* navor ရဲ့ မိဘ , အရွယ်အစားကို ချိန်ညှိရန် နေရာ*/
+/* ================= NAVBAR ================= */
 .wrapper {
-    position: sticky;  /* 👈 ဤနေရာမှာ အဓိကပါ */
-    top: 0;           /* 👈 အပေါ်ဆုံးမှာ ကပ်နေဖို့ သတ်မှတ်ချက်ပါ */
+    position: sticky;
+    top: 0;
     z-index: 1000;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 1rem;
 }
+
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #081032; /* Glass Background */
-    backdrop-filter: blur(10px); /* Blur Effect */
+    background-color: #081032;
+    backdrop-filter: blur(10px);
     padding: 1rem 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     position: relative;
-    z-index: 1000; /* ပုံတွေရဲ့ အပေါ်မှာ ပေါ်နေစေရန် */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1000;
     font-weight: bold;
     font-size: 18px;
 }
@@ -251,19 +96,20 @@ nav ul {
 nav a {
     position: relative;
     padding: 8px 16px;
-    color: #f3f5f8; /* Normal color */
+    color: #f3f5f8;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #00d4ff; /* Electric Blue */
-    background: rgba(0, 212, 255, 0.1); /* Subtle Glow Background */
-    /**text-shadow: 0 0 10px rgba(255, 251, 0, 0.8); /* Neon Text Glow */
-    text-shadow: gold;
+    color: #00d4ff;
+    background: rgba(0,212,255,0.1);
     border-radius: 8px;
 }
 
-/* အောက်ကနေ မျဉ်းလေး ထွက်လာမယ့် Effect */
+nav a.active {
+    color: #00d4ff;
+}
+
 nav a::after {
     content: '';
     position: absolute;
@@ -277,14 +123,10 @@ nav a::after {
     box-shadow: 0 0 10px #00d4ff;
 }
 
-nav a:hover::after {
-    width: 80%; /* Hover လုပ်ရင် မျဉ်းလေး ပေါ်လာမယ် */
-}
+nav a:hover::after { width: 80%; }
 
-/* --- Dropdown Styling --- */
-.dropdown { 
-    position: relative; 
-}
+/* Dropdown */
+.dropdown { position: relative; }
 
 .dropdown-content {
     display: none;
@@ -300,355 +142,240 @@ nav a:hover::after {
     max-height: 70vh;
     overflow-y: auto;
 }
-
-/* Dropdown Show Class (JS မှ လှမ်းခေါ်ရန်) */
-.dropdown-content.show { 
-    display: block !important; 
-}
-
+.dropdown-content.show { display: block !important; }
 .dropdown-content li a {
     padding: 10px 20px;
     display: block;
     color: #fbf7f7 !important;
     font-size: 14px;
 }
-
 .dropdown-content li a:hover {
-    background: rgba(52, 152, 219, 0.1);
+    background: rgba(52,152,219,0.1);
     color: #3498db !important;
     padding-left: 25px;
 }
 
-/* Mobile Toggle Checkbox ဖျောက်ထားရန် */
-#toggle, nav label {
-    display: none;
-}
+#toggle, nav label { display: none; }
 
-/* --- Mobile Responsive Design --- */
+/* Mobile */
 @media (max-width: 768px) {
-    nav {
-        padding: 1rem;
-    }
-
+    nav { padding: 1rem; }
     nav label {
         display: inline-flex;
         color: white;
         cursor: pointer;
         font-size: 1.5rem;
     }
-
     nav .menu {
         width: 100%;
         height: 0;
         overflow: hidden;
-        background-color: rgba(30, 0, 60, 0.95);
+        background-color: rgba(30,0,60,0.95);
         border-radius: 8px;
         margin-top: 10px;
         transition: height 0.4s ease;
     }
-
     nav ul {
         flex-direction: column;
         align-items: center;
         padding: 1.5rem 0;
         gap: 1.5rem;
     }
-
-    #toggle:checked ~ .menu {
-        height: 380px; /* Menu ပေါ်လာမည့် အမြင့် */
-    }
-
+    #toggle:checked ~ .menu { height: 380px; }
     .dropdown-content {
         position: static;
         box-shadow: none;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255,255,255,0.1);
         width: 100%;
         text-align: center;
-        
         max-height: 70vh;
         overflow-y: auto;
     }
-        .dropdown-content li a {
+    .dropdown-content li a {
         padding: 5px 15px !important;
-        display: block;
         color: #fbf7f7 !important;
         font-size: 12px;
     }
-    .dropdown-content li a {
-        color: white !important;
-    }
 }
 
-/* --- Content Section Styling --- */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.hero-section {
-    padding: 70px 0;
-    padding-top: 0px;
+/* ================= PAGE HERO ================= */
+.page-hero {
     text-align: center;
+    padding: 50px 20px 10px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.hero-title {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-/* TEXT SLIDER */
-.slider {
-    display: inline-block;
-    height: 45px;
-    overflow: hidden;
-}
-
-.slide-track {
-    display: flex;
-    flex-direction: column;
-    animation: slideText 9s infinite;
-}
-
-.slide-track span {
-    height: 40px;
-    line-height: 40px;
-}
-
-@keyframes slideText {
-    0%,20% { transform: translateY(0); }
-    33%,53% { transform: translateY(-40px); }
-    66%,86% { transform: translateY(-80px); }
-    100% { transform: translateY(0); }
-}
-
-/* BANNERS */
-.banner-box {
-    margin: 20px 0;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    display: inline-block;
-}
-
-
-.banner-box img {
-    width: 100%;
-    transition: transform 0.5s;
-}
-
-.banner-box img:hover {
-    transform: scale(1.05);
-}
-.slider-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 30px;
-.slider-container {
-    overflow:hidden;
-    width: 100%;
-
-}
-}
-
-/* TRACK */
-.slider-track {
-    display: flex;
-    width: 100%;
-}
-
-/* EACH SLIDE */
-.slide {
-    min-width: 100%;
-    width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* KEY FIX */
-.slide img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,170,255,0.2);
-    border: none;
+.page-hero h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     color: #00d4ff;
-    font-size: 30px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
+    text-shadow: 0 0 20px rgba(0,212,255,0.35);
+    margin-bottom: 18px;
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
-
-.nav-btn:hover {
-    background: rgba(0,170,255,0.5);
+.page-hero p {
+    color: #b9c4dd;
+    font-size: 1.02rem;
+    line-height: 1.9;
+    max-width: 780px;
+    margin: 0 auto;
 }
-@media (max-width: 768px) {
 
-    /* Reduce overall spacing */
-    .hero-section {
-        padding: 30px 0;
-    }
-    .nav-btn {
-        display: none;
-    }
-
-
-    .hero-title {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
-    /* FIX IMAGE HEIGHT (VERY IMPORTANT) */
-    .slide img {
-        height: 220px;   /* smaller height for mobile */
-        object-fit: cover;
-    }
-
-    /* Make slider edges softer */
-    .slider-container {
-        border-radius: 12px;
-    }
-
-    /* Smaller navigation buttons */
-    .nav-btn {
-        font-size: 20px;
-        padding: 6px 10px;
-    }
-
-    .prev { left: 8px; }
-    .next { right: 8px; }
-
+/* ================= FOOD SECTION ================= */
+.food-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 5% 70px;
 }
-@media (max-width: 480px) {
 
-    .slide img {
-        height: 180px;
-    }
+.food-section { margin-top: 20px; }
 
-    .hero-title {
-        font-size: 18px;
-    }
-
-    .nav-btn {
-        font-size: 16px;
-        padding: 5px 8px;
-    }
+/* ================= FOOD CARD ================= */
+.food-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 22px;
+    overflow: hidden;
+    margin-bottom: 48px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-@media (max-width: 768px) {
-    p{
-     font-size: 8px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+.food-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 55px rgba(0,0,0,0.5);
 }
-header {
-    
-    background-position: center;
-    height: 10vh;
+
+/* Card grid — image + text side by side */
+.card-grid {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 8px;
-     color: #fcf9f9;
-    margin-bottom: 40px;
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    align-items: stretch;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
+.food-card.reverse .card-grid {
+    flex-direction: row-reverse;
+}
+
+/* Image */
+.food-image {
+    flex: 0 0 48%;
+    min-height: 320px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Info */
+.food-info {
+    flex: 1;
+    padding: 34px 34px 30px;
+}
+
+.food-info h2 {
+    font-size: 1.85rem;
+    color: #00d4ff;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(0,212,255,0.25);
+}
+
+.food-info .lead {
+    color: #d6e1f5;
+    font-size: 1.02rem;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.food-info h3 {
     font-size: 1rem;
-    margin-bottom: 0px;
+    color: #ffc46b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 18px 0 12px;
 }
 
-.highlight {
-    color: #ff9f43;
-}
-.container1{
-  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
-  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
-  gap: 0px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
-  padding: 3px;
-  
+/* Benefits list */
+.benefits {
+    margin-bottom: 20px;
 }
 
-.image-part1 img {
-  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
-  max-width: 100px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
-  height: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 3px solid rgba(255, 255, 255, 0.1);
-
+.benefits li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    color: #c8d4ec;
+    font-size: 0.98rem;
+    line-height: 1.8;
 }
 
-.text-part1 {
-  flex: 1; 
-   font-size: 18px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
-}
-.team-container { 
-            display: flex;
-            flex-wrap: wrap;     
-            justify-content: center; 
-            gap: 0px;         
-            padding: 0px;
-        }
-/* member-card ထဲက ပုံတွေကို ဘေးတိုက်စီမယ် */
-.member-card {
-    display: flex;         /* Flexbox သုံးပြီး Row စီမယ် */
-    flex-direction: row;   /* ဘေးတိုက်စီဖို့ (Default လည်း row ပါပဲ) */
-    justify-content: center; /* ပုံတွေကို အလယ်မှာ စုပေးမယ် */
-    gap: 5px;             /* ပုံတစ်ပုံနဲ့ တစ်ပုံကြား အကွာအဝေး */
-    padding: 10px;
+.benefits li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #00d4ff;
+    font-size: 0.8rem;
 }
 
-/* ပုံတွေ အကြီးကြီးဖြစ်မနေအောင် အရွယ်အစား သတ်မှတ်မယ် */
-.member-card img {
-    width: 100px;          /* ပုံရဲ့ အကျယ် (စိတ်ကြိုက်ပြင်ပါ) */
-    height: 50px;         /* ပုံရဲ့ အမြင့် */
-    object-fit: cover;     /* ပုံမပြဲသွားအောင် ထိန်းမယ် */
-    border-radius: 10px;   /* ထောင့်လေးတွေ ဝိုင်းချင်ရင် ထည့်ပါ */
-}
-.container2{
-  display: flex;       /* ပုံနဲ့စာကို ဘေးတိုက်ဖြစ်စေတယ် */
-  align-items: center; /* အလယ်ဗဟိုမှာ ညီအောင်ညှိပေးတယ် */
-  gap: 0px;           /* ပုံနဲ့စာကြား အကွာအဝေး */
-  padding: 0px;
-  flex-direction: row-reverse;
-}
-.image-part2 img {
-  width: 100%;         /* ပုံကို သူ့အကွက်ထဲ အပြည့်ဖြစ်စေတယ် */
-  max-width: 100px;    /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်နိုင်တယ် */
-  height: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 3px solid rgba(255, 255, 255, 0.1);
+.benefits strong { color: #00d4ff; }
 
+/* Note box */
+.note {
+    background: rgba(0,212,255,0.07);
+    border-left: 4px solid #00d4ff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    color: #bcd6f7;
+    font-size: 0.96rem;
+    line-height: 1.85;
 }
 
-.text-part2 {
-  flex: 1; 
-   font-size: 18px;
-    color: #fcf9f9;
-    
-    font-weight: 500;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);            /* စာကွက်ကို ကျန်တဲ့နေရာ အပြည့်ယူစေတယ် */
+/* ================= FOOD GALLERY ================= */
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 12px 28px 28px;
 }
+
+.food-gallery img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.food-gallery img:hover {
+    transform: scale(1.03);
+    border-color: rgba(0,212,255,0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 860px) {
+    .card-grid { flex-direction: column !important; }
+    .food-image { min-height: 240px; }
+    .food-info { padding: 26px 24px 24px; }
+    .food-gallery {
+        padding: 10px 20px 22px;
+        gap: 8px;
+    }
+    .food-gallery img { height: 130px; }
+}
+
+@media (max-width: 560px) {
+    .food-image { min-height: 200px; }
+    .food-info { padding: 22px 18px; }
+    .food-info h2 { font-size: 1.45rem; }
+    .food-gallery img { height: 100px; }
+    .page-hero { padding: 30px 16px 8px; }
+    .page-hero h1 { font-size: 1.3rem; }
+    .page-hero p { font-size: 0.92rem; }
 }
